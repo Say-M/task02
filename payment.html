@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="inc/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="inc/scripts.js"></script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="main">
+            <form class="bg-white form-registration" action="#" onsubmit="return false">
+                <div class="form-header">
+                    <h2 class="text-center">Complete Registration</h2>
+                </div>
+                <div class="form-body mt-5">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Month<small class="text-danger">*</small></label>
+                        <div class="col-sm-4">
+                            <input type="date" required class="form-control form-control-sm rounded-0" id="address" />
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="date" required class="form-control nxtMonth form-control-sm rounded-0"
+                                id="address" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="date" class="col-sm-4 col-form-label">Date<small
+                                class="text-danger">*</small></label>
+                        <div class="col-sm-8">
+                            <input type="date" required class="form-control form-control-sm rounded-0" id="date" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="addfee" class="col-sm-4 col-form-label">Admission Fee<small
+                                class="text-danger">*</small></label>
+                        <div class="col-sm-8">
+                            <input type="number" required class="form-control form-control-sm rounded-0" id="addfee"
+                                min="1000" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="pacfee" class="col-sm-4 col-form-label">Package Fee<small
+                                class="text-danger">*</small></label>
+                        <div class="col-sm-8">
+                            <input type="number" required class="form-control form-control-sm rounded-0" id="pacfee"
+                                min="1000" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="discount" class="col-sm-4 col-form-label">Discount</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control form-control-sm rounded-0" id="discount"
+                                min="300" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="due" class="col-sm-4 col-form-label">Due</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control form-control-sm rounded-0" id="due" min="300" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="total" class="col-sm-4 col-form-label">Total<small
+                                class="text-danger">*</small></label>
+                        <div class="col-sm-8">
+                            <input type="number" required class="form-control form-control-sm rounded-0" id="total"
+                                min="1000" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-4 px-2">
+                        <h3>Select Payment Method</h3>
+                        <div>
+                            <div class="custom-control custom-radio custom-control-inline my-1">
+                                <input required type="radio" id="bkash" name="payment" class="custom-control-input">
+                                <label class="custom-control-label" for="bkash"><img
+                                        src="https://www.logo.wine/a/logo/BKash/BKash-Icon-Logo.wine.svg" width="50"
+                                        alt="bkash"> Bkash</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline my-1">
+                                <input required type="radio" id="handond" name="payment" class="custom-control-input">
+                                <label class="custom-control-label" for="handond"><i
+                                        class="fas fa-hand-holding-usd mr-2"></i> Cash on hand</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline my-1">
+                                <input required type="radio" id="card" name="payment" class="custom-control-input">
+                                <label class="custom-control-label" for="card"><i class="far fa-credit-card mr-2"></i>
+                                    Credit/Debit Card</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center mt-4">
+                        <button type="submit" class="btn btn-block btn-primary">
+                            CHECKOUT
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

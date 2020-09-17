@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="inc/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="inc/scripts.js"></script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="main">
+            <form class="bg-white form-registration" action="#" onsubmit="return false">
+                <div class="form-header">
+                    <h2 class="text-center">Complete Registration</h2>
+                    <div class="user-icon text-right">
+                        <i class="far fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="form-body">
+                    <div class="form-group row">
+                        <label for="address" class="col-sm-4 col-form-label">Address</label>
+                        <div class="col-sm-8">
+                            <input type="text" placeholder="Enter Address"
+                                class="form-control form-control-sm rounded-0" id="address" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-8 offset-sm-4 pb-sm-2">
+                            <input placeholder="Enter City Name" type="text"
+                                class="form-control form-control-sm rounded-0" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-8 offset-sm-4 pb-sm-2">
+                            <input placeholder="Enter Zip Code" type="text"
+                                class="form-control form-control-sm rounded-0" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="profession" class="col-sm-4 col-form-label">Profession</label>
+                        <div class="col-sm-8">
+                            <input type="tel" class="form-control form-control-sm rounded-0" id="profession"
+                                placeholder="Enter Profession" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="height" class="col-sm-4 col-form-label">Height</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control form-control-sm rounded-0" id="height" min="3" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="weight" class="col-sm-4 col-form-label">Weight</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control form-control-sm rounded-0" id="weight" min="30" />
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="type" class="col-sm-4 col-form-label">Traning Type</label>
+                        <div class="col-sm-8">
+                            <select id="type" class="custom-select custom-select-sm rounded-0">
+                                <option selected>Select Type</option>
+                                <option value="1">Trainee</option>
+                                <option value="1">Traning</option>
+                                <option value="2">Tranier</option>
+                            </select>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="package" class="col-sm-4 col-form-label">Package<small
+                                class="text-danger">*</small></label>
+                        <div class="col-sm-8">
+                            <select required id="package" class="custom-select custom-select-sm rounded-0">
+                                <option selected>Select DoB</option>
+                                <option value="1">Trainee</option>
+                                <option value="1">Traning</option>
+                                <option value="2">Tranier</option>
+                            </select>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="shift" class="col-sm-4 col-form-label">Shift<small
+                                class="text-danger">*</small></label>
+                        <div class="col-sm-8">
+                            <select required id="shift" class="custom-select custom-select-sm rounded-0">
+                                <option selected>Select Shift</option>
+                                <option value="1">1.30 PM</option>
+                                <option value="1">4.30 PM</option>
+                                <option value="2">10.00 AM</option>
+                            </select>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Upload Photo<small class="text-danger">*</small></label>
+                        <div class="col-sm-8">
+                            <div class="custom-file">
+                                <input required type="file" class="custom-file-input" id="photo">
+                                <label class="custom-file-label customFile" for="photo">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Upload NID<small class="text-danger">*</small></label>
+                        <div class="col-sm-8">
+                            <div class="custom-file">
+                                <input required type="file" class="custom-file-input" id="nid">
+                                <label class="custom-file-label customFile" for="nid">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row m-auto">
+                        <div class="custom-control custom-checkbox">
+                            <input required type="checkbox" class="custom-control-input" id="agree">
+                            <label class="custom-control-label" for="agree">
+                                <small>
+                                    <a href="#" class="text-primary">Terms and conditions</a>, I accept all the terms
+                                    and
+                                    conditions
+                                </small>
+                        </div>
+                    </div>
+                    <div class="form-group text-center mt-4">
+                        <button type="submit" class="btn btn-block btn-primary">
+                            SUBMIT
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

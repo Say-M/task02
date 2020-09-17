@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: 'Poppins', sans-serif;
+  color: #707070;
+}
+
+.btn-primary {
+  background: #17C1FE !important;
+  border-color: #17C1FE;
+}
+
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active {
+  border-color: #17C1FE;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center .main {
+  padding: 2rem;
+  background: #fff;
+  width: 35.25rem;
+  height: auto;
+}
+
+.center .main h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.center .main h2 small {
+  font-size: .8rem;
+}
+
+.center .main form {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.center .main form .form-header h2 {
+  font-weight: 600;
+}
+
+.center .main form .form-header h3 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.center .main form .form-body {
+  margin: 1rem;
+}
+
+.center .main form .form-body .col-sm-8 {
+  position: relative;
+}
+
+.center .main form .form-body .col-sm-8 input,
+.center .main form .form-body .col-sm-8 .custom-select {
+  border: none;
+  background: #f8f8f8;
+  position: relative;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.center .main form .form-body .col-sm-8 input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #eee;
+}
+
+.center .main form .form-body .col-sm-8 span {
+  position: absolute;
+  height: 1px;
+  width: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+  background: #70b5ff;
+  -webkit-box-shadow: 0px 0px 4px #89c2ff;
+          box-shadow: 0px 0px 4px #89c2ff;
+  left: 15px;
+  bottom: 7px;
+}
+
+.center .main form .form-body .col-sm-8 input:focus + span,
+.center .main form .form-body .col-sm-8 .custom-select:focus + span {
+  width: 90.4%;
+}
+
+.center .main .form-registration h2 {
+  position: relative;
+  font-weight: 400;
+}
+
+.center .main .form-registration h2::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #707070;
+  width: 70%;
+  left: 50%;
+  bottom: -15px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.center .main .form-registration .user-icon {
+  margin: 2rem 4rem 0 0;
+}
+
+.center .main .form-registration .user-icon i {
+  font-size: 7rem;
+}
+
+.center .main .form-registration input,
+.center .main .form-registration .custom-select {
+  background: #eee !important;
+}
+
+.center .main .form-registration input:focus,
+.center .main .form-registration .custom-select:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: #fff !important;
+}
+
+.center .main .form-registration .customFile.custom-file-label::after {
+  content: '\f03e';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+@media (max-width: 575.98px) {
+  form .form-body .col-sm-8 span {
+    bottom: 0 !important;
+  }
+  .nxtMonth {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
